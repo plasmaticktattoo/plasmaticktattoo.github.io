@@ -38,8 +38,13 @@ body{
 .icon {
     height: 2em;
     width: 2em;
+    margin: 0.3em;
+    padding: 0;
 }
 
+a, a:focus, a:active, a:visited, a:hover {
+    text-decoration: none;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
