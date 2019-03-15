@@ -34,7 +34,7 @@ Cnel. Murguiondo 2792, B1824HTK Lanús Oeste, Buenos Aires
 
 <body>
     <div style="position: fixed; z-index: -99; width: 100%; height: 100%; background-color: black">
-        <video src="video/bg.mp4" autoplay="true" loop="true" style="min-width: 100%; height: 100%;"></video>
+        <video id="video-bg" src="video/bg.mp4" autoplay loop style="min-width: 100%; height: 100%;"></video>
     </div>
     <div class="main">
         <div class="social">
@@ -56,6 +56,13 @@ Cnel. Murguiondo 2792, B1824HTK Lanús Oeste, Buenos Aires
                 width="320" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div> -->
     </div>
+    <script lang="javascript">
+        document.onload = function() {
+            console.log('loaded');
+            let v = document.getElementById('video-bg');
+            v.play();
+        }
+    </script>
 </body>
 
 </html>
